@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.stockanalyser
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, data, data-jdbc, github-workflow-google-cloud-run-graalvm, graalvm, http-client, java, java-application, jdbc-hikari, junit, logback, lombok, maven, mongo-reactive, mongo-sync, netty-server, openapi, postgres, reactor, readme, redis-lettuce, security, security-annotations, security-jwt, shade, testcontainers, yaml]
