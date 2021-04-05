@@ -38,7 +38,7 @@ jobs:
           TESTCONTAINERS_RYUK_DISABLED: true
         run: |
           export DOCKER_IMAGE=`echo "${GCLOUD_GCR}/${GCLOUD_PROJECT_ID}/${GCLOUD_IMAGE_REPOSITORY}/stock-analyser-demo" | sed -e 's#//#/#' -e 's#^/##'`
-          ./mvnw deploy -Dpackaging=docker-native -Djib.docker.image=$DOCKER_IMAGE --no-transfer-progress
+          ./mvnw deploy -Dpackaging=docker-native -Djib.docker.image=$DOCKER_IMAGE -Dmicronaut.native-image.args="--report-unsupported-elements-at-runtime" --no-transfer-progress
       - name: Deploy Cloud Run
         run: |
           DOCKER_IMAGE_REPOSITORY=$(docker images --format "{{.Repository}}" | grep stock-analyser-demo)
