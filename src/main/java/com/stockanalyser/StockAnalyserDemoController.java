@@ -7,6 +7,7 @@ public class StockAnalyserDemoController {
 
     @Get(uri="/", produces="text/plain")
     public String index() {
+    	System.out.println("Example response");
         return "Example Response";
     }
 }

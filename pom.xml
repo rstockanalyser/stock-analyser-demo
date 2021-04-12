@@ -108,16 +108,7 @@
       <artifactId>micronaut-mongo-sync</artifactId>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>io.micronaut.security</groupId>
-      <artifactId>micronaut-security</artifactId>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.micronaut.security</groupId>
-      <artifactId>micronaut-security-jwt</artifactId>
-      <scope>compile</scope>
-    </dependency>
+    
     <dependency>
       <groupId>io.micronaut.sql</groupId>
       <artifactId>micronaut-jdbc-hikari</artifactId>
@@ -199,11 +190,7 @@
               <artifactId>micronaut-openapi</artifactId>
               <version>${micronaut.openapi.version}</version>
             </path>
-            <path>
-              <groupId>io.micronaut.security</groupId>
-              <artifactId>micronaut-security-annotations</artifactId>
-              <version>${micronaut.security.version}</version>
-            </path>
+            
           </annotationProcessorPaths>
           <compilerArgs>
             <arg>-Amicronaut.processing.group=com.stockanalyser</arg>
